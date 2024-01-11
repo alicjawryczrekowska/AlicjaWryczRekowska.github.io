@@ -2,17 +2,12 @@
     font-family: lemonMilk;
     src: url("../font/LEMONMILK-Regular.otf");
 }
-
-:root {
-    --first-color: brown;
-    --second-color: #ff7;
-  }
  
 body
 {
     min-height: 100vh;
     grid-template-rows: repeat(3, 1fr);
-    background-image: linear-gradient(purple, purple);
+    background-color: #f1eff9;
 }
 
 h1, a, h2
@@ -42,7 +37,7 @@ html, head, body
 }
 header, .linkholder
 {
-    background-color: brown;
+    background-color: #715e9e;
 }
 
 header, .linkholder
@@ -54,7 +49,7 @@ header, .linkholder
 
 footer
 {
-    background-color: brown;
+    background-color: #715e9e;
     text-align: center;
     padding: 4px;
     margin-top: 20px;
@@ -80,7 +75,7 @@ header h1
 header a
 {
     color: white;
-    font-size: 20px;
+    font-size: 1em;
     margin: 0 40px;
 }
 
@@ -128,10 +123,11 @@ article a
 
 .stuff img 
 {
-    flex: 1 0 25%;
     height: auto;
     width: 100%;
+    object-fit: cover;
     border-radius: 10px;
+    aspect-ratio: 1/1;
 }
 
 .stuff img:hover
@@ -141,7 +137,7 @@ article a
 
 .me_img
 {
-    background-image: url("../img/alicja_temp.jpg");
+    background-image: url("../img/alicja.png");
     background-size: contain;
     background-repeat: no-repeat;
     aspect-ratio: 1/1;
