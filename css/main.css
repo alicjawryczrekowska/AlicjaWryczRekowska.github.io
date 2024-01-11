@@ -1,6 +1,11 @@
 @font-face {
-    font-family: lemonMilk;
-    src: url("../font/LEMONMILK-Regular.otf");
+    font-family: sixties;
+    src: url("../font/Charming\ Sixties.ttf");
+}
+
+@font-face {
+    font-family: nuninoSans;
+    src: url("../font/NunitoSans_7pt_Condensed-Black.ttf");
 }
  
 body
@@ -10,26 +15,29 @@ body
     background-color: #f1eff9;
 }
 
-h1, a, h2
-{
-    font-family: lemonMilk;
-    text-decoration: none; 
-}§
 
 a:hover, .current
 {
-  text-decoration: underline;
-}
-
-a:hover
-{
-    color: pink;
+    color: #f1eff9;
+    text-decoration: underline;
 }
 
 h1
 {
     color: white;
 }
+
+h1, h2, h1 a
+{
+    font-family: sixties;
+    text-decoration: none; 
+}
+
+h1 a
+{
+    filter: drop-shadow(5px 5px #ad9fcf);
+}
+
 
 html, head, body
 {
@@ -55,11 +63,6 @@ footer
     margin-top: 20px;
 }
 
-header, .gridy
-{
-    /*border: solid #000 1px;*/
-}
-
 header h1
 {
     margin-left: 20px;
@@ -67,16 +70,34 @@ header h1
 
 .linkholder
 {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    display: flex;
+    align-items: center;
     gap: 10px;
 }
 
 header a
 {
     color: white;
-    font-size: 1em;
-    margin: 0 40px;
+    font-size: 2em;
+    margin: 0 20px;
+    @media (pointer: none), (pointer: coarse) 
+    {
+        font-size: 1.4em;
+    }
+}
+
+header h1
+{
+    margin-top: 1em;
+}
+
+.linkholder a
+{
+    text-anchor: middle;
+    @media (pointer: none), (pointer: coarse) 
+    {
+        font-size: 2em;
+    }
 }
 
 article a
@@ -86,12 +107,20 @@ article a
 
 .gridy, .portfolio
 {
+    color: #715e9e;
     width: 80vw;
-    background-color: beige;
+    background-color: #f1eff9;
     gap: 10px;
     margin: 0 auto;
     padding: 2%;
     border-radius: 5px;
+    filter: drop-shadow(0 5px 5px black)
+}
+
+.portfolio h2
+{
+    font-size: 4em;
+    color: #ad9fcf;
 }
 
 .gridy
@@ -103,6 +132,12 @@ article a
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }
+}
+
+.gridy h2
+{
+    font-size: 7em;
+    color: #ad9fcf;
 }
 
 .me_img
@@ -148,10 +183,11 @@ article a
     padding: 2%;
 }
 
-p a, p
+a, p
 {
-    font-family: lemonMilk;
-    font-size: 20px;
+    font-family: nuninoSans;
+    color: #715e9e;
+    font-size: 2em;
 }
 
 footer, header, body
@@ -159,6 +195,14 @@ footer, header, body
     @media (pointer: none), (pointer: coarse) 
     {
         width: 100vw;
+    }
+}
+
+header
+{
+    @media (pointer: none), (pointer: coarse) 
+    {
+        height: 8em;
     }
 }
 
