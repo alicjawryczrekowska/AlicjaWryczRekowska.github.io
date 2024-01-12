@@ -1,2 +1,3 @@
-# AlicjaWryczRekowska.github.io
-Mitt portfolio
+# Mitt Portfolio
+
+https://alicjawryczrekowska.github.io/
