@@ -27,10 +27,10 @@ h1
     color: white;
 }
 
-h1, h2, h1 a
+h1, h2, h1 a, a
 {
     font-family: sixties;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 h1 a
@@ -105,7 +105,7 @@ article a
     color: black;
 }
 
-.gridy, .portfolio
+.gridy, .portfolio, .contact
 {
     color: #715e9e;
     width: 80vw;
@@ -167,7 +167,7 @@ article a
 
 .stuff img:hover
 {
-    filter: drop-shadow(5px 5px 5px);
+    filter: drop-shadow(0 5px 5px #ad9fcf);
 }
 
 .me_img
@@ -181,6 +181,30 @@ article a
 .me_txt
 {
     padding: 2%;
+}
+
+.contact
+{
+    text-align: center;
+    min-height: 60vh;
+}
+
+.contact a
+{
+    font-size: 1em;
+    color: black;
+    text-decoration: dotted;
+}
+
+.contact a:hover
+{
+    color: #715e9e;
+    text-decoration: underline;
+}
+
+.contact h2
+{
+    font-size: 4em;
 }
 
 a, p
@@ -206,7 +230,7 @@ header
     }
 }
 
-.gridy
+.gridy, .portfolio
 {
     @media (pointer: none), (pointer: coarse) 
     {
