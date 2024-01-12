@@ -12,7 +12,8 @@ body
 {
     min-height: 100vh;
     grid-template-rows: repeat(3, 1fr);
-    background-color: #f1eff9;
+    background-image: url("../img/bg/stars.png");
+    background-repeat: initial;
 }
 
 
@@ -110,7 +111,6 @@ article a
     color: #715e9e;
     width: 80vw;
     background-color: #f1eff9;
-    gap: 10px;
     margin: 0 auto;
     padding: 2%;
     border-radius: 5px;
@@ -121,6 +121,11 @@ article a
 {
     font-size: 4em;
     color: #ad9fcf;
+}
+
+.contact a
+{
+    color: #715e9e;
 }
 
 .gridy
@@ -183,6 +188,19 @@ article a
     padding: 2%;
 }
 
+.me_txt p
+{
+    margin-left: 1.2em;
+    font-size: 1.8em;
+}
+
+.me_txt h2
+{
+    margin-left: 0.3em;
+    margin-bottom: 0;
+}
+
+
 .contact
 {
     text-align: center;
@@ -192,7 +210,7 @@ article a
 .contact a
 {
     font-size: 1em;
-    color: black;
+    color: #715e9e;
     text-decoration: dotted;
 }
 
@@ -205,6 +223,11 @@ article a
 .contact h2
 {
     font-size: 4em;
+}
+
+.contact p
+{
+    color: #ad9fcf;
 }
 
 a, p
@@ -230,11 +253,20 @@ header
     }
 }
 
-.gridy, .portfolio
+.gridy, .portfolio, .contact
 {
     @media (pointer: none), (pointer: coarse) 
     {
         width: 95vw;
+        text-align: center;
+    }
+}
+
+.contact
+{
+    @media (pointer: none), (pointer: coarse) 
+    {
+        height: 85vh;
         text-align: center;
     }
 }
