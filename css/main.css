@@ -173,6 +173,7 @@ article a
 .stuff img:hover
 {
     filter: drop-shadow(0 5px 5px #ad9fcf);
+    object-fit: contain;
 }
 
 .me_img
